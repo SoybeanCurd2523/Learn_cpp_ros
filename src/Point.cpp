@@ -2,15 +2,20 @@
 #include "Point.h"
 using namespace std;
 
-bool Point::InitMembers(int xpos, int ypos){
-    if(xpos < 0 || ypos < 0){
-        cout << "벗어난 범위의 값 전달" << endl;
-        return false;
-    }
+// bool Point::InitMembers(int xpos, int ypos){
+//     if(xpos < 0 || ypos < 0){
+//         cout << "벗어난 범위의 값 전달" << endl;
+//         return false;
+//     }
 
+//     x = xpos;
+//     y = ypos;
+//     return true;
+// }
+
+Point::Point(const int &xpos, const int &ypos){ // Rectangle.cpp의 멤버 이니셜라이저가 호출하는 대상인듯
     x = xpos;
     y = ypos;
-    return true;
 }
 
 int Point::GetX() const{

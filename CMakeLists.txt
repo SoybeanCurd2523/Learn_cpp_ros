@@ -35,6 +35,13 @@ add_executable(FruitSaleSim1 src/FruitSaleSim1.cpp)
 add_dependencies(FruitSaleSim1 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(FruitSaleSim1 ${catkin_LIBRARIES})
 
+add_executable(FruitSaleSim2 src/FruitSaleSim2.cpp)
+add_dependencies(FruitSaleSim2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(FruitSaleSim2 ${catkin_LIBRARIES})
+
+add_executable(FruitSaleSim3 src/FruitSaleSim3.cpp)
+add_dependencies(FruitSaleSim3 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(FruitSaleSim3 ${catkin_LIBRARIES})
 
 ################
 
@@ -42,15 +49,31 @@ add_executable(RectangleFaultFind src/RectangleFaultFind.cpp src/Point.cpp src/R
 add_dependencies(RectangleFaultFind ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(RectangleFaultFind ${catkin_LIBRARIES})
 
+add_executable(RectangleConstructor src/RectangleConstructor.cpp src/Point.cpp src/Rectangle.cpp)
+add_dependencies(RectangleConstructor ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(RectangleConstructor ${catkin_LIBRARIES})
 
+####################
 
+add_executable(Encaps1 src/Encaps1.cpp)
+add_dependencies(Encaps1 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(Encaps1 ${catkin_LIBRARIES})
 
+##################
 
+add_executable(problem4-2 src/problem4-2.cpp)
+add_dependencies(problem4-2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(problem4-2 ${catkin_LIBRARIES})
 
+#################
 
+add_executable(Constructor1 src/Constructor1.cpp)
+add_dependencies(Constructor1 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(Constructor1 ${catkin_LIBRARIES})
 
-
-
+add_executable(Destructor src/Destructor.cpp)
+add_dependencies(Destructor ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(Destructor ${catkin_LIBRARIES})
 
 
 
