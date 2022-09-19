@@ -65,6 +65,10 @@ add_executable(problem4-2 src/problem4-2.cpp)
 add_dependencies(problem4-2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(problem4-2 ${catkin_LIBRARIES})
 
+add_executable(problem4-3 src/problem4-3.cpp)
+add_dependencies(problem4-3 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(problem4-3 ${catkin_LIBRARIES})
+
 #################
 
 add_executable(Constructor1 src/Constructor1.cpp)
@@ -75,11 +79,21 @@ add_executable(Destructor src/Destructor.cpp)
 add_dependencies(Destructor ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(Destructor ${catkin_LIBRARIES})
 
+#################
 
+add_executable(ReferenceMember src/ReferenceMember.cpp)
+add_dependencies(ReferenceMember ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(ReferenceMember ${catkin_LIBRARIES})
 
+#################
 
+add_executable(ObjArr src/ObjArr.cpp)
+add_dependencies(ObjArr ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(ObjArr ${catkin_LIBRARIES})
 
-
+add_executable(ObjPtrArr src/ObjPtrArr.cpp)
+add_dependencies(ObjPtrArr ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(ObjPtrArr ${catkin_LIBRARIES})
 
 ###################
 ###################

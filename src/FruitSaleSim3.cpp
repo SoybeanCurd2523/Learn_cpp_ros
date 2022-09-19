@@ -9,7 +9,7 @@ private:
 
 public:
     FruitSeller(int price, int num, int money) // 생성자
-        :APPLE_PRICE(price), numOfApples(num), myMoney(money) // const 멤버 변수도 이니셜라이저를 통해서 초기화가 가능하다.
+        :APPLE_PRICE(price), numOfApples(num), myMoney(money) // const 멤버 변수도 멤버이니셜라이저를 통해서 초기화가 가능하다.
     {
     }
     int SaleApples(int money){

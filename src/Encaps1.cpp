@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// encaps 2
 class SinivelCap // 콧물 처치용 캡슐
 {
 public:
